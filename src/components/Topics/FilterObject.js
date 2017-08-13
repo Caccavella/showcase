@@ -33,7 +33,7 @@ class FilterObject extends Component {
             <span className="puzzleText">Unfiltered: {JSON.stringify(this.state.people, null, 10)}</span>
             <input className="inputLine" onChange={ (e) => this.handleChange(e.target.value)}></input>
             <button className="confirmationButton" onClick={ () => this.filterOut(this.state.userInput)}>Filter</button>
-            <span className="resultBOx filterObjectRB">Filtered: {JSON.stringify(this.state.filteredPeople, null, 10)}</span>
+            <span className="resultBox filterObjectRB">Filtered: {JSON.stringify(this.state.filteredPeople, null, 10)}</span>
         </div>    
         )
     }
